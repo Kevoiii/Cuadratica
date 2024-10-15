@@ -1,27 +1,29 @@
+//En este programa se imita la formula general para sacar X1 y X2,
+// use varias variables y utilice comandos como sqrt y pow, ademas utilice un if.
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    //aqui declaro las variables
+
 int a, b ,c, x1, x2;
-//variable auxiliar para raiz
+
 double r;
-//texto de indicación
+
 cout<<"Ingresa los valores de A, B y C"<<endl;
-//leer las variables
+
 cin>>a>>b>>c;
-//calcular raiz+
+
 r=sqrt(pow(b,2)-4*a*c);
-//calcular x1
+
 x1=(-b+r)/(2*a);
-//calcular x2
+
 x2=(-b-r)/(2*a);
-//if para si la raiz es<0 marcar error y si a=0 igual.
+
 if(a == 0 or ((pow(b,2)-4*a*c)<0))
    {
        cout<<"La raiz es negativa o no se puede resolver este problema";
         return 0;
    }
-   //respuestas
+
 cout<<"las soluciones son: X1= "<<x1<<" y X2= "<<x2;
 
 
